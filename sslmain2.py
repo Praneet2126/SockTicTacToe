@@ -31,7 +31,7 @@ class TicTacToe:
             # Create an SSLContext and use its wrap_socket method
             context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
             context.load_verify_locations(cafile=ssl_cert_path)
-            client = context.wrap_socket(client, server_hostname="127.0.0.1")
+            client = context.wrap_socket(client, server_hostname="192.168.29.27")
 
         client.connect((host, port))
 
