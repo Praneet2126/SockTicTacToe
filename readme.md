@@ -11,7 +11,7 @@
 - Generating a self-signed certificate for server
   - use your IP in the field 
     ```
-    openssl req -x509 -newkey rsa:4096 -keyout server-key.pem -out server-signed-cert1.pem -days 365 -nodes -subj "/CN=example.com" -addext "subjectAltName = IP:127.0.0.1
+    openssl req -x509 -newkey rsa:4096 -keyout server-key.pem -out server-signed-cert1.pem -days 365 -nodes -subj "/CN=example.com" -addext "subjectAltName = IP:127.0.0.1"
     ```
 
 - Generating Client certificate :
